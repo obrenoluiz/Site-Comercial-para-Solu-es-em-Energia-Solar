@@ -24,4 +24,4 @@ Este é um projeto desenvolvido para empresas que desejam oferecer soluções em
 ## 🚀 Como Rodar o Projeto
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-projeto.git
+   git clone https://github.com/obrenoluiz/Site-Comercial-para-Solu-es-em-Energia-Solar.git
