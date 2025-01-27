@@ -1,9 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/enersol/' : '',
+  output: "export",
   trailingSlash: true,
+  reactStrictMode: true,
+  images: {
+    domains: ['github.io', 'obrenoluiz.github.io'],
+  },
+  devIndicators: {
+    appIsrStatus: false,
+    buildActivity: false,
+    buildActivityPosition: 'bottom-right',
+  },
 };
 
 export default nextConfig;
