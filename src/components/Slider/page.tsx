@@ -21,7 +21,6 @@ const images = [
 ];
 
 export default function Slider() {
-
     return (
         <div className="relative w-full flex flex-col items-center justify-center py-16 bg-gray-100">
             <div className="text-center z-10 mb-10">
@@ -58,6 +57,7 @@ export default function Slider() {
                                 alt={`Imagem ${index + 1}`}
                                 layout="fill"
                                 objectFit="cover"
+                                loading="lazy"
                                 className="rounded-lg shadow-lg"
                             />
                         </div>

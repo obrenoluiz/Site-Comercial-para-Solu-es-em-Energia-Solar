@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { FC } from 'react';
 import { FaPhone, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header: FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +45,7 @@ const Header: FC = () => {
 
             <div className="hidden md:flex items-center space-x-4">
                 <button className="bg-yellow-500 text-white text-sm font-bold py-2 px-4 rounded-full hover:bg-yellow-600 transition duration-200">
-                ORÇAMENTO
+                <Link href="/orcamento">ORÇAMENTO</Link>
                 </button>
             </div>
 
