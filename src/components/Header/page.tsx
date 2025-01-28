@@ -16,7 +16,7 @@ const Header: FC = () => {
         <header className="bg-white text-dark-blue py-4 shadow-lg">
             <div className="container mx-auto flex justify-between items-center px-4">
             <div className="flex items-center space-x-4">
-                <Image src="/placa_icon.png" alt="Logo" width={80} height={80} className="object-cover rounded-full" />
+                <Image src="https://github.com/obrenoluiz/solarys/blob/main/public/placa_icon.png?raw=true" alt="Logo" width={80} height={80} className="object-cover rounded-full" />
                 <div>
                 <h1 className="text-xl font-extrabold tracking-tight text-blue-900">
                     SOLARYS

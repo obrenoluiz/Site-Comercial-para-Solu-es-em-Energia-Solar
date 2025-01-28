@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const images = [
-    "/banner1.png",
+    "https://github.com/obrenoluiz/solarys/blob/main/public/banner1.png?raw=true",
 ];
 
 function Banner() {
