@@ -3,7 +3,6 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const images = [
@@ -22,18 +21,6 @@ const images = [
 ];
 
 export default function Slider() {
-    const [slidesPerView, setSlidesPerView] = useState(5);
-
-    useEffect(() => {
-        const updateSlidesPerView = () => {
-            const newSlides = Math.max(2, Math.floor(window.innerWidth / 100)); 
-            setSlidesPerView(newSlides);
-        };
-
-        updateSlidesPerView();
-        window.addEventListener("resize", updateSlidesPerView);
-        return () => window.removeEventListener("resize", updateSlidesPerView);
-    }, []);
 
     return (
         <div className="relative w-full flex flex-col items-center justify-center py-16 bg-gray-100">

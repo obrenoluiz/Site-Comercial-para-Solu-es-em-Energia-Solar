@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 function Footer() {
@@ -40,7 +41,7 @@ function Footer() {
         </div>
         <div className="mt-8">
           <h2 className="text-xl font-bold mb-4">Certificados de Segurança</h2>
-          <img src="/ssl.png" alt="Certificados de Segurança" className="w-32" />
+          <Image src="/ssl.png" alt="Certificados de Segurança" width={128} height={128} />
         </div>
       </div>
     </footer>

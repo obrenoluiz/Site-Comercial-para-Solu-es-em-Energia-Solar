@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const images = [
-    "https://github.com/obrenoluiz/syntesol/blob/main/public/banner1.png?raw=true",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/banner1.png",
 ];
 
 function Banner() {
