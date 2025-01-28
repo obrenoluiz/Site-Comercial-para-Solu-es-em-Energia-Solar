@@ -26,7 +26,7 @@ const OrcamentoPage: React.FC = () => {
             <div
                 className="min-h-screen bg-cover bg-center flex items-center justify-center px-4 md:px-10"
                 style={{
-                    backgroundImage: "url('/casa_solar.png')",
+                    backgroundImage: "url('https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/casa_solar.png')",
                     backgroundSize: 'cover',
                 }}
             >

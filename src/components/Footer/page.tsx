@@ -41,7 +41,7 @@ function Footer() {
         </div>
         <div className="mt-8 flex flex-col items-center">
           <h2 className="text-2xl font-bold mb-4">Certificados de Segurança</h2>
-          <Image src="/ssl.png" alt="Certificados de Segurança" width={128} height={128} />
+          <Image src="https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/ssl.png" alt="Certificados de Segurança" width={128} height={128} />
         </div>
       </div>
     </footer>
