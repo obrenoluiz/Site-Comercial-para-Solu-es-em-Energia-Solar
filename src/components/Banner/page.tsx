@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const images = [
     "/banner1.png",
@@ -17,10 +18,11 @@ function Banner() {
 
     return (
         <div className="relative w-full h-64 md:h-80">
-            <img
+            <Image
                 src={images[currentImageIndex]}
                 alt="Banner"
-                className="object-cover w-full h-full"
+                layout="fill"
+                objectFit="cover"
             />
         </div>
     );
