@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { FC } from 'react';
 import { FaPhone, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Header: FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,10 +16,10 @@ const Header: FC = () => {
         <header className="bg-white text-dark-blue py-4 shadow-lg">
             <div className="container mx-auto flex justify-between items-center px-4">
             <div className="flex items-center space-x-4">
-                <img src="/placa_icon.png" alt="Logo" className="w-20 h-20 object-cover rounded-full" />
+                <Image src="/placa_icon.png" alt="Logo" width={80} height={80} className="object-cover rounded-full" />
                 <div>
                 <h1 className="text-xl font-extrabold tracking-tight text-blue-900">
-                    ENERSOL
+                    SOLARYS
                 </h1>
                 <p className="text-sm font-medium text-gray-600">Energia Eficiente</p>
                 </div>

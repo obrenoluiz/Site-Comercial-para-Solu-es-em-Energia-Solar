@@ -1,16 +1,17 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   reactStrictMode: true,
   images: {
-      domains: ['github.io', 'obrenoluiz.github.io'],
+    unoptimized: true,
+    domains: ['github.io', 'obrenoluiz.github.io'],
   },
   devIndicators: {
-      appIsrStatus: false,
-      buildActivity: false,
-      buildActivityPosition: 'bottom-right',
+    appIsrStatus: false,
+    buildActivity: false,
+    buildActivityPosition: 'bottom-right',
   },
 };
 
