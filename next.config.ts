@@ -4,8 +4,14 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   reactStrictMode: true,
   images: {
-    unoptimized: true,
-    domains: ['github.io', 'obrenoluiz.github.io'],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        pathname: "/obrenoluiz/syntesol/**",
+      },
+    ],
+    domains: ['github.io', 'obrenoluiz.github.io', 'github.com', 'raw.githubusercontent.com'],
   },
   devIndicators: {
     appIsrStatus: false,

@@ -1,11 +1,10 @@
-"use client";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const images = [
     "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider1.jpg",
@@ -67,11 +66,15 @@ export default function Slider() {
                 >
                     {images.map((src, index) => (
                         <SwiperSlide key={index} className="relative">
-                            <img
-                                src={src}
-                                alt={`Imagem ${index + 1}`}
-                                className="w-full h-64 object-cover rounded-lg shadow-lg"
-                            />
+                            <div className="relative w-full h-[300px]">
+                                <Image
+                                    src={src}
+                                    alt={`Imagem ${index + 1}`}
+                                    layout="fill" // Preenche o espaço disponível
+                                    objectFit="cover" // Mantém o aspecto de cobertura
+                                    className="rounded-lg shadow-lg"
+                                />
+                            </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 rounded-lg"></div>
                         </SwiperSlide>
                     ))}
