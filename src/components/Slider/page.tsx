@@ -34,39 +34,37 @@ export default function Slider() {
                 </p>
             </div>
 
-            <div className="mt-10">
-                <Swiper
-                    spaceBetween={20}
-                    centeredSlides={true}
-                    loop={true}
-                    autoplay={{ delay: 3000 }}
-                    pagination={{ clickable: true }}
-                    navigation
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="w-screen"
-                    breakpoints={{
-                        640: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
-                        1440: { slidesPerView: 4 },
-                        1920: { slidesPerView: 5 },
-                    }}
-                >
-                    {images.map((src, index) => (
-                        <SwiperSlide key={index} className="relative">
-                            <div className="relative w-full h-[300px]">
-                                <Image
-                                    src={src}
-                                    alt={`Imagem ${index + 1}`}
-                                    layout="fill" // Preenche o espaço disponível
-                                    objectFit="cover" // Mantém o aspecto de cobertura
-                                    className="rounded-lg shadow-lg"
-                                />
-                            </div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 rounded-lg"></div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
+            <Swiper
+                spaceBetween={20}
+                centeredSlides={true}
+                loop={true}
+                autoplay={{ delay: 3000 }}
+                pagination={{ clickable: true }}
+                navigation
+                modules={[Autoplay, Pagination, Navigation]}
+                className="w-full"
+                breakpoints={{
+                    640: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                    1440: { slidesPerView: 4 },
+                    1920: { slidesPerView: 5 },
+                }}
+            >
+                {images.map((src, index) => (
+                    <SwiperSlide key={index} className="relative">
+                        <div className="relative w-full h-[300px]">
+                            <Image
+                                src={src}
+                                alt={`Imagem ${index + 1}`}
+                                layout="fill"
+                                objectFit="cover"
+                                className="rounded-lg shadow-lg"
+                            />
+                        </div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 rounded-lg"></div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
 
             <button className="mt-20 bg-yellow-500 text-white px-8 py-3 rounded-full font-bold hover:bg-yellow-600 transition transform hover:scale-105 shadow-lg">
                 INSTALE ENERGIA SOLAR
