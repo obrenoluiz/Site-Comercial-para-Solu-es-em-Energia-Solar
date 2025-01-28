@@ -8,23 +8,23 @@ import "swiper/css/pagination";
 import { useEffect, useState } from "react";
 
 const images = [
-    "/slider1.jpg",
-    "/slider2.jpg",
-    "/slider3.jpg",
-    "/slider4.jpg",
-    "/slider5.jpg",
-    "/slider6.jpg",
-    "/slider7.jpg",
-    "/slider8.jpg",
-    "/slider9.jpg",
-    "/slider10.jpg",
-    "/slider11.jpg",
-    "/slider12.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider1.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider2.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider3.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider4.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider5.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider6.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider7.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider8.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider9.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider10.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider11.jpg",
+    "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider12.jpg",
 ];
 
 export default function Slider() {
     const [slidesPerView, setSlidesPerView] = useState(5);
-    
+
     useEffect(() => {
         const updateSlidesPerView = () => {
             const newSlides = Math.max(2, Math.floor(window.innerWidth / 100)); 
