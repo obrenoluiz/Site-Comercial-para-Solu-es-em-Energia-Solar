@@ -29,4 +29,4 @@ Este é um projeto desenvolvido para empresas que desejam oferecer soluções em
 ---
 
 ## 💻 Website
-https://obrenoluiz.github.io/solarys/
+https://obrenoluiz.github.io/syntesol/

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Solarys",
+  title: "Syntesol",
   description: "Modelo de site para uma empresa fictícia de energia solar",
 };
 

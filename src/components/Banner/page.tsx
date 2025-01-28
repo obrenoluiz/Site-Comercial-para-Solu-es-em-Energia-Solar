@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const images = [
-    "https://github.com/obrenoluiz/solarys/blob/main/public/banner1.png?raw=true",
+    "https://github.com/obrenoluiz/syntesol/blob/main/public/banner1.png?raw=true",
 ];
 
 function Banner() {
@@ -17,12 +17,13 @@ function Banner() {
     }, []);
 
     return (
-        <div className="relative w-full h-64 md:h-80">
+        <div className="relative w-full h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96">
             <Image
                 src={images[currentImageIndex]}
                 alt="Banner"
                 layout="fill"
                 objectFit="cover"
+                className="rounded-lg"
             />
         </div>
     );
