@@ -31,14 +31,14 @@ const Header: FC = () => {
                         <FaPhone className="text-blue-700" />
                         <div>
                             <p className="font-bold text-blue-900">Atendimento</p>
-                            <p className="text-gray-600">62 <span className="font-bold">00000-0000</span></p>
+                            <p className="text-gray-600">62 <span className="font-bold">99355-4457</span></p>
                         </div>
                     </div>
                     <div className="flex items-center space-x-2">
                         <FaWhatsapp className="text-green-500" />
                         <div>
                             <p className="font-bold text-blue-900">Chamar no Whats</p>
-                            <p className="text-gray-600">62 <span className="font-bold">00000-0000</span></p>
+                            <p className="text-gray-600">62 <span className="font-bold">99355-4457</span></p>
                         </div>
                     </div>
                 </div>

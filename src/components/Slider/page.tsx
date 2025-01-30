@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
+import Link from "next/link";
 
 const images = [
     "https://raw.githubusercontent.com/obrenoluiz/syntesol/refs/heads/main/public/slider1.jpg",
@@ -66,9 +67,11 @@ export default function Slider() {
                 ))}
             </Swiper>
 
-            <button className="mt-20 bg-yellow-500 text-white px-8 py-3 rounded-full font-bold hover:bg-yellow-600 transition transform hover:scale-105 shadow-lg">
-                INSTALE ENERGIA SOLAR
-            </button>
+            <Link href="https://wa.me/5562993554457" target="_blank">
+                <button className="mt-20 bg-yellow-500 text-white px-8 py-3 rounded-full font-bold hover:bg-yellow-600 transition transform hover:scale-105 shadow-lg">
+                    INSTALE ENERGIA SOLAR
+                </button>
+            </Link>
         </div>
     );
 }
